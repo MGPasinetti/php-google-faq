@@ -12,13 +12,15 @@ html {
 
 /* HEADER */
 header {
-    padding: 1.5rem 2rem;
+    padding: 1.5rem 2rem 0 2rem;
+    border-bottom: 1px solid #b1b1b1;
 }
 
 header > div {
     display: flex;
     justify-content: space-between;
     align-items: center;
+    margin-bottom: 1.5rem;
 }
 
 .logo-title {
@@ -34,9 +36,9 @@ header img {
 header h1 {
     color: #767676;
     font-weight: 300;
-    font-size: 28px;
+    font-size: 25px;
     margin-top: 0;
-    line-height: 1;
+    line-height: 30px;
 }
 
 .tools-account {
@@ -59,41 +61,66 @@ header h1 {
     border-radius: 20rem;
 }
 
+nav ul {
+    list-style: none;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 3rem;
+    line-height: 2.5;
+    border-bottom: 2px solid transparent;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #767676;
+}
+
+nav ul li:hover {
+    border-bottom: 2px solid #0072ec;
+}
+
+nav ul li:hover a {
+    color: #0072ec;
+}
+
+
 /* MAIN */
 main {
     max-width: 1180px;
     margin: 4rem auto;
+    font-size: 14px;
 }
 
-h1 {
+main h1 {
     margin-top: 5rem;
     font-weight: 500;
     font-size: 25px;
 }
 
-h2 {
+main h2 {
     margin-top: 4rem;
     font-weight: 500;
     font-size: 20px;
 }
 
-p {
+main p {
     margin: 2rem 0;
 }
 
-a {
+main a {
     text-decoration: none;
     color: #007bff;
 }
 
-ol {
+main ol {
     margin:0;
     padding:0;
     list-style: decimal inside none;
 }
 
-ol li 
-{
+main ol li {
     margin: 0;
     padding: 0;
     text-indent: -2.2em;
@@ -101,13 +128,13 @@ ol li
     margin-top: 1.5rem;
 }
 
-li::before {
+main li::before {
     content: "";
     width: 20px;
     display: inline-block;
 }
 
-li > ol {
+main li > ol {
     list-style-type: lower-latin;
 }
 

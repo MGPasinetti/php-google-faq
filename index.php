@@ -36,7 +36,21 @@ Completare il resto della pagina. -->
             </div>
         </div>
         <nav>
+            <?php
+                $arrLinks = [
+                    'Introduzione',
+                    'Norme sulla privacy',
+                    'Termini di servizio',
+                    'Tecnologie',
+                    'Domande frequenti'
+                ];
 
+                echo '<ul>';
+                foreach ($arrLinks as $link) {
+                   echo '<li>' . '<a href="#">' . $link . '</a>' . '</li>';
+                };
+                echo '<ul>';
+            ?>
         </nav>
     </header>
 
