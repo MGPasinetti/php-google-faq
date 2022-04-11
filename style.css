@@ -16,3 +16,8 @@ h1 {
 p {
     margin: 1rem 0;
 }
+
+a {
+    text-decoration: none;
+    color: #007bff;
+}
