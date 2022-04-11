@@ -27,3 +27,22 @@ a {
     text-decoration: none;
     color: #007bff;
 }
+
+ol {
+    margin:0;
+    padding:0;
+    list-style: decimal inside none;
+}
+
+ol li 
+{
+    margin: 0;
+    padding: 0;
+    text-indent: -2.2em;
+    margin-left: 2.2em;
+    margin-top: 1.5rem;
+}
+
+li > ol {
+    list-style-type: lower-latin;
+}
